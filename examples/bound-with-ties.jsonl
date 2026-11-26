@@ -1,0 +1,12 @@
+{"at":0,"kind":"capacity","record":{"limit":3}}
+{"at":0,"kind":"source","record":{"shard":"a","node":"one","revision":1,"epoch":1,"available":true}}
+{"at":0,"kind":"source","record":{"shard":"b","node":"two","revision":1,"epoch":1,"available":true}}
+{"at":1,"kind":"search","record":{"client":"c","id":"q","shards":["a","b"],"revision":1,"until":10,"partial":true}}
+{"at":2,"kind":"part","record":{"id":"q","shard":"a","node":"one","epoch":1,"attempt":1,"rows":[[1,"a"],[2,"a"]],"bound":[5,"a"]}}
+{"at":3,"kind":"part","record":{"id":"q","shard":"b","node":"two","epoch":1,"attempt":1,"rows":[],"bound":[2,"0"]}}
+{"at":4,"kind":"page","record":{"id":"q","client":"c","limit":3,"page":"p1"}}
+{"at":5,"kind":"part","record":{"id":"q","shard":"b","node":"two","epoch":1,"attempt":1,"rows":[[2,"b"]],"bound":null}}
+{"at":6,"kind":"restart","record":{}}
+{"at":7,"kind":"page","record":{"id":"q","client":"c","limit":3,"page":"p1"}}
+{"at":8,"kind":"ack","record":{"id":"q","client":"c","page":"p1"}}
+{"at":9,"kind":"page","record":{"id":"q","client":"c","limit":3,"page":"p2"}}

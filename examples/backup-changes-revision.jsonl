@@ -1,0 +1,7 @@
+{"at":0,"kind":"capacity","record":{"limit":3}}
+{"at":0,"kind":"source","record":{"shard":"a","node":"old","revision":1,"epoch":1,"available":true}}
+{"at":0,"kind":"source","record":{"shard":"a","node":"new","revision":2,"epoch":1,"available":true}}
+{"at":1,"kind":"search","record":{"client":"c","id":"q","shards":["a"],"revision":1,"until":5,"partial":true}}
+{"at":2,"kind":"source","record":{"shard":"a","node":"old","revision":1,"epoch":2,"available":false}}
+{"at":3,"kind":"page","record":{"id":"q","client":"c","limit":5,"page":"p"}}
+{"at":5,"kind":"inspect","record":{"id":"q"}}
